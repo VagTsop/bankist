@@ -57,7 +57,26 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const displayMovements = function (movements) {
+  containerMovements.innerHTML = '';
 
+  movements.forEach(function (mov, i) {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+    //movements__type--${type}"> --> construct class dynamic - deposit or withdrawal
+    const html = `
+    <div class="movements__row">                    
+      <div class="movements__type movements__type--${type}">
+      ${i + 1} ${type}</div>
+      <div class="movements__value">${mov}</div>
+    </div>
+  `;
+
+    // ATTACH THE ROW INTO MOVEMENTS CONTAINER
+    containerMovements.insertAdjacentHTML('afterbegin', html); // this method takes two strings: the first is the position we want to attach the HTML - THE SECOND ARGUMENT IS THE STRING CONTAING THE HTML THAT WE WANT TO INSERT
+  });
+};
+
+displayMovements(account1.movements);
 
 const currencies = new Map([
   ['USD', 'United States dollar'],
@@ -66,4 +85,3 @@ const currencies = new Map([
 ]);
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
