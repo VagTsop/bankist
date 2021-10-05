@@ -11,9 +11,9 @@ Main Functions:
 
 Loging With dummy credentials
 ------------------------------
-a) username:js ,pin:1111<br>
-b) username:jd ,pin:2222<br>
-c) username:stw ,pin:3333<br>
-d) username:ss ,pin:4444
+a) username: js, pin: 1111<br>
+b) username: jd, pin: 2222<br>
+c) username: stw, pin: 3333<br>
+d) username: ss, pin: 4444
 
 🥇  🥇  🥇  🥇 🥇 🥇  🥇 🥇
