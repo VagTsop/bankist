@@ -1,4 +1,4 @@
-<h3 style="text-decoration: underline">Main Functions</h3>
+<h3>Main Functions</h3>
 ------------------------------
 <br>
  1. Transfer money to another account <br>
